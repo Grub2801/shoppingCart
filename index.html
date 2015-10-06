@@ -8,13 +8,55 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>`
     <script src="js/application.js"></script>
-
+    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
     
+    <h1>Shopping Cart</h1>
+    
+    <section id="items-list" class="container">
+      <div class="item row">
+        <div class="item-name col-xs-4"></div>  
+        <div class="item-price col-xs-3"></div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" value="0"></input>  
+          <button class="cancel">Cancel</button>
+        </div>
+        <div class="item-subtotal col-xs-2">$0.00</div>
+      </div>
+      
+      <div class="item row">
+        <div class="item-name col-xs-4"></div>  
+        <div class="item-price col-xs-3"></div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity" value="0"></input>  
+          <button class="cancel">Cancel</button>
+        </div>
+        <div class="item-subtotal col-xs-2">$0.00</div>
+      </div>
+      
+      <div class="item row">
+        <div class="col-xs-4">  
+          <input id="new-item-name">
+        </div>
+        <div class="col-xs-3">
+          <input id="new-item-unit-price">
+        </div>
+        <div class="col-xs-3"> 
+          <button id="new-item-create">Create</button>
+        </div>
+      </div>
+    </section>
+    
+    <button id="calculate">Calculate</button>
+    <h1>Total Cost</h1>
+    <h1 id="totalprice">0.00</h1> 
+
   </body>
 </html>
